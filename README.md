@@ -3,5 +3,5 @@
 ## Install
 
 ```
-sudo ansible-playbook main.yml -i inventory
+sudo ansible-playbook main.yml
 ```
