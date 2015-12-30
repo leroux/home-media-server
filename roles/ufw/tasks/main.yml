@@ -4,8 +4,8 @@
 - name: Enable logging
   ufw: logging=on
 
-- name: Allow SSH
-  ufw: rule=allow name=ssh
+- name: Allow SSH 22/tcp
+  ufw: rule=allow port=22 proto=tcp
 
-- name: Allow www
-  ufw: rule=allow name=www
+- name: Allow www 80/tcp
+  ufw: rule=allow port=80 proto=tcp
